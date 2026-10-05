@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo">
+                My Games
+            </a>
+            <nav class="navegacao" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#cadastro">Cadastrar jogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <span class="tag">CATÁLOGO DE JOGOS</span>
+                <h1>Encontre seu próximo jogo aqui!</h1>
+                <p>
+                    Consulte, organize e gerencie informações sobre seus jogos
+                    favoritos em um só lugar.
+                </p>
+                <a href="#catalogo" class="botao botao-principal">
+                    Explorar catálogo
+                </a>
+            </div>
+        </section>
+
+        <section id="catalogo" class="secao">
+            <div class="container">
+                <div class="titulo-secao">
+                    <div>
+                        <span class="tag">GAMES</span>
+                        <h2>Biblioteca de jogos</h2>
+                        <p>
+                            Pesquise, filtre e organize os jogos cadastrados em nosso catálogo.
+                        </p>
+                    </div>
+                </div>
+
+                <aside class="painel-filtros" aria-label="Pesquisa e filtros">
+                    <div class="campo pesquisa">
+                        <label for="pesquisa">Pesquisar jogo</label>
+                        <input
+                            type="search"
+                            id="pesquisa"
+                            name="pesquisa"
+                            placeholder="Digite o nome do jogo..."
+                        >
+                    </div>
+                    <div class="campo">
+                        <label for="genero">Gênero</label>
+                        <select id="genero" name="genero">
+                            <option value="">Todos os gêneros</option>
+                            <option value="acao">Ação</option>
+                            <option value="aventura">Guerra</option>
+                            <option value="rpg">RPG</option>
+                            <option value="estrategia">Hack and Slash</option>
+                            <option value="esporte">Souls-like</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="plataforma">Plataforma</label>
+                        <select id="plataforma" name="plataforma">
+                            <option value="">Todas as plataformas</option>
+                            <option value="pc">PC</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="switch">Nintendo Switch</option>
+                            <option value="retro">Retro</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="ordenacao">Ordenar por</label>
+                        <select id="ordenacao" name="ordenacao">
+                            <option value="nome">Nome</option>
+                            <option value="lancamento">Data de lançamento</option>
+                            <option value="nota">Nota no Metacritic</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <div class="cabecalho-lista">
+                    <h3>Jogos em Destaque</h3>
+                    <span class="quantidade">
+                        6 jogos
+                    </span>
+                </div>
+
+                <div class="grid-jogos">
+
+                    <!-- The Witcher 3-->
+                    <article class="card-jogo">
+                        <div class="capa capa-witcher">
+                            <div class="capa">
+                                <img src="assets/img/thewitcher3.png" alt="Capa do jogo The Witcher 3">
+                                <span>RPG</span>
+                            </div>
+                            <span>RPG · Aventura</span>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>The Witcher 3</h3>
+                            <p class="informacao">
+                                CD Projekt Red · 2015
+                            </p>
+                            <p>
+                                Um RPG de mundo aberto ambientado em um universo
+                                de fantasia e bruxaria.
+                            </p>
+
+                            <div class="card-acoes">
+                                <a href="#detalhes" class="botao botao-detalhes">
+                                    Ver detalhes
+                                </a>
+                                <button type="button" class="botao botao-editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="botao botao-excluir">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Minecraft-->
+                    <article class="card-jogo">
+                        <div class="capa capa-minecraft">
+                            <img src="assets/img/minecraft.png" alt="Capa do jogo Minecraft">
+                            <span>Aventura</span>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>Minecraft</h3>
+                            <p class="informacao">
+                                Mojang Studios · 2011
+                            </p>
+                            <p>
+                                Jogo de construção e exploração em um mundo
+                                aberto formado por blocos.
+                            </p>
+
+                            <div class="card-acoes">
+                                <a href="#detalhes" class="botao botao-detalhes">
+                                    Ver detalhes
+                                </a>
+                                <button type="button" class="botao botao-editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="botao botao-excluir">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!--Elden Ring-->
+                    <article class="card-jogo">
+                        <div class="capa capa-elden">
+                            <img src="assets/img/eldenring.png" alt="Capa do jogo Elden Ring">
+                            <span>RPG · Souls-like</span>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>Elden Ring</h3>
+                            <p class="informacao">
+                                FromSoftware · 2022
+                            </p>
+                            <p>
+                                RPG de ação em um grande mundo de fantasia
+                                desenvolvido pela FromSoftware.
+                            </p>
+
+                            <div class="card-acoes">
+                                <a href="#detalhes" class="botao botao-detalhes">
+                                    Ver detalhes
+                                </a>
+                                <button type="button" class="botao botao-editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="botao botao-excluir">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!--Red Dead Redemption 2-->
+                    <article class="card-jogo">
+                        <div class="capa capa-reddead">
+                            <img src="assets/img/reddeadredemption2.png" alt="Capa do jogo Red Dead Redemption 2">
+                            <span>Ação · Velho Oeste</span>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>Red Dead Redemption 2</h3>
+                            <p class="informacao">
+                                Rockstar Games · 2018
+                            </p>
+                            <p>
+                                Uma história de ação e redenção em um mundo aberto ambientada no
+                                Velho Oeste americano.
+                            </p>
+
+                            <div class="card-acoes">
+                                <a href="#detalhes" class="botao botao-detalhes">
+                                    Ver detalhes
+                                </a>
+                                <button type="button" class="botao botao-editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="botao botao-excluir">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- God of War - 2018 -->
+                    <article class="card-jogo">
+                        <div class="capa capa-god">
+                            <img src="assets/img/godofwar2018.png" alt="Capa do jogo God of War">
+                            <span>Ação</span>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>God of War</h3>
+                            <p class="informacao">
+                                Santa Monica Studio · 2018
+                            </p>
+                            <p>
+                                Aventura de ação que acompanha Kratos e seu
+                                filho Atreus em uma jornada pela mitologia nórdica.
+                            </p>
+
+                            <div class="card-acoes">
+                                <a href="#detalhes" class="botao botao-detalhes">
+                                    Ver detalhes
+                                </a>
+                                <button type="button" class="botao botao-editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="botao botao-excluir">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Cyberpunk 2077 -->
+                    <article class="card-jogo">
+                        <div class="capa capa-cyberpunk">
+                            <img src="assets/img/cyberpunk2077.png" alt="Capa do jogo Cyberpunk 2077">
+                            <span>RPG · Futurista</span>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>Cyberpunk 2077</h3>
+                            <p class="informacao">
+                                CD Projekt Red · 2020
+                            </p>
+                            <p>
+                                RPG de ação ambientado em Night City, uma
+                                megalópole futurista.
+                            </p>
+
+                            <div class="card-acoes">
+                                <a href="#detalhes" class="botao botao-detalhes">
+                                    Ver detalhes
+                                </a>
+                                <button type="button" class="botao botao-editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="botao botao-excluir">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cadastro de um novo jogo pra biblioteca -->
+        <section id="cadastro" class="secao secao-cadastro">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="tag">CADASTRO</span>
+                    <h2>Cadastrar um novo jogo</h2>
+                    <p>
+                        Adicione um novo jogo a biblioteca.
+                    </p>
+                </div>
+                <form class="formulario">
+                    <div class="grupo-campo">
+                        <label for="titulo">Título do jogo</label>
+                        <input
+                            type="text"
+                            id="titulo"
+                            name="titulo"
+                            placeholder="Ex.: The Last of Us"
+                            required
+                        >
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="desenvolvedora">Desenvolvedora</label>
+                        <input
+                            type="text"
+                            id="desenvolvedora"
+                            name="desenvolvedora"
+                            placeholder="Ex.: Naughty Dog"
+                        >
+                    </div>
+                    <div class="linha-formulario">
+                        <div class="grupo-campo">
+                            <label for="genero-cadastro">Gênero</label>
+
+                            <select id="genero-cadastro" name="genero-cadastro">
+                                <option value="">Todos os gêneros</option>
+                                <option value="acao">Ação</option>
+                                <option value="aventura">Guerra</option>
+                                <option value="rpg">RPG</option>
+                                <option value="estrategia">Hack and Slash</option>
+                                <option value="esporte">Souls-like</option>
+                            </select>
+                        </div>
+                        <div class="grupo-campo">
+                            <label for="plataforma-cadastro">Plataforma</label>
+
+                            <select
+                                id="plataforma-cadastro"
+                                name="plataforma-cadastro"
+                            >
+                                <option value="">Selecione</option>
+                                <option value="pc">PC</option>
+                                <option value="playstation">PlayStation</option>
+                                <option value="xbox">Xbox</option>
+                                <option value="switch">Nintendo Switch</option>
+                                <option value="retro">Retro</option>
+                            </select>
+                        </div>
+                        <div class="grupo-campo">
+                            <label for="data-lancamento">
+                                Data de lançamento
+                            </label>
+                            <input
+                                type="date"
+                                id="data-lancamento"
+                                name="data-lancamento"
+                            >
+                        </div>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="imagem">URL da imagem</label>
+                        <input
+                            type="url"
+                            id="imagem"
+                            name="imagem"
+                            placeholder="https://exemplo.com/imagem.jpg"
+                        >
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="descricao">Descrição</label>
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="5"
+                            placeholder="Digite uma descrição sobre o jogo..."
+                        ></textarea>
+                    </div>
+                    <div class="acoes-formulario">
+                        <button type="reset" class="botao botao-secundario">
+                            Limpar
+                        </button>
+                        <button type="submit" class="botao botao-principal">
+                            Cadastrar jogo
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Detalhes do jogo selecionado(tenho que dar um jeito de mudar o jogo que aparece aqui...)-->
+        <section id="detalhes" class="secao">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="tag">DETALHES</span>
+                    <h2>Detalhes do jogo</h2>
+                </div>
+
+                <article class="detalhes-jogo">
+                    <div class="detalhes-capa capa-witcher">
+                        <img src="assets/img/thewitcher3.png" alt="Capa do jogo The Witcher 3">
+                    </div>
+                    <div class="detalhes-conteudo">
+                        <h2>The Witcher 3: Wild Hunt</h2>
+                        <p class="nota">
+                            ★ 9.5 / 10
+                        </p>
+                        <p>
+                            The Witcher 3: Wild Hunt é um RPG de mundo aberto
+                            desenvolvido pela CD Projekt Red. O jogador controla
+                            Geralt de Rívia em uma jornada por um mundo de fantasia.
+                        </p>
+                        <dl class="informacoes-jogo">
+                            <div>
+                                <dt>Desenvolvedora</dt>
+                                <dd>CD Projekt Red</dd>
+                            </div>
+                            <div>
+                                <dt>Lançamento</dt>
+                                <dd>19/05/2015</dd>
+                            </div>
+                            <div>
+                                <dt>Gênero</dt>
+                                <dd>RPG</dd>
+                            </div>
+                            <div>
+                                <dt>Plataformas</dt>
+                                <dd>PC, PlayStation, Xbox e Nintendo Switch</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                &copy; 2026 My games.
+            </p>
+            <p>
+                Projeto acadêmico - Etapa 1
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
